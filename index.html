@@ -3,10 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="https://w3bits.com/wp-content/themes/w/labs.css">
+	<link rel="stylesheet" href="https://w3bits.com/wp-content/themes/w/labs.css1">
 	<title>A CSS-only Touch-friendly Navigation Menu - W3Bits</title>
- 	
-<style>body {
+<style>
+
+
+
+ 
+ 
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+ 
+ .cf:after,
+ .lab-grid:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ .wrapper {
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 1.5em;
+   padding-right: 1.5em;
+   padding-left: 1.5em;
+   max-width: 1080px;
+ }
+ 
+
+
+/* ------------- */ 
+
+body {
   background: #ddd;
 }
 
@@ -167,15 +198,15 @@
   #menu li:hover > input[type="checkbox"] + .sub-menu {
     display: block;
   }
-}</style>          
+}</style>      
 
 <script>const loadScriptsTimer=setTimeout(loadScripts,5*1000);const userInteractionEvents=["mouseover","keydown","touchstart","touchmove","wheel"];userInteractionEvents.forEach(function(event){window.addEventListener(event,triggerScriptLoader,{passive:!0})});function triggerScriptLoader(){loadScripts();clearTimeout(loadScriptsTimer);userInteractionEvents.forEach(function(event){window.removeEventListener(event,triggerScriptLoader,{passive:!0})})}
   function loadScripts(){document.querySelectorAll(`script[data-type="omniumLazyLoad"]`).forEach(function(elem){elem.setAttribute("src",elem.getAttribute("data-src")); elem.removeAttribute("data-src");elem.removeAttribute("data-type");})}
 </script>
     <script data-type="omniumLazyLoad" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3807405957822797" crossorigin="anonymous"></script>
-	
+    
 </head>
-<body class="wp-singular labs-template-default single single-labs postid-2474 wp-theme-w">
+<body>
 <div class="container">
 
 	<div class="wrapper">
@@ -280,8 +311,7 @@
     </li>
   </ul>
 </nav>
-
-
+	
 <!-- Responsive -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -293,7 +323,6 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-		
 </div>
 </body>
 </html>
