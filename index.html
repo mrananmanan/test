@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="https://w3bits.com/wp-content/themes/w/labs.css">
 	<title>A CSS-only Touch-friendly Navigation Menu - W3Bits</title>
+ 	
 <style>body {
   background: #ddd;
 }
@@ -167,6 +168,12 @@
     display: block;
   }
 }</style>          
+
+<script>const loadScriptsTimer=setTimeout(loadScripts,5*1000);const userInteractionEvents=["mouseover","keydown","touchstart","touchmove","wheel"];userInteractionEvents.forEach(function(event){window.addEventListener(event,triggerScriptLoader,{passive:!0})});function triggerScriptLoader(){loadScripts();clearTimeout(loadScriptsTimer);userInteractionEvents.forEach(function(event){window.removeEventListener(event,triggerScriptLoader,{passive:!0})})}
+  function loadScripts(){document.querySelectorAll(`script[data-type="omniumLazyLoad"]`).forEach(function(elem){elem.setAttribute("src",elem.getAttribute("data-src")); elem.removeAttribute("data-src");elem.removeAttribute("data-type");})}
+</script>
+    <script data-type="omniumLazyLoad" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3807405957822797" crossorigin="anonymous"></script>
+	
 </head>
 <body class="wp-singular labs-template-default single single-labs postid-2474 wp-theme-w">
 <div class="container">
